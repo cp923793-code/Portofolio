@@ -1,0 +1,1 @@
+select distinct year,week from discount_b order by year,week

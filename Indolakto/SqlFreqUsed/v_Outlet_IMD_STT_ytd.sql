@@ -1,0 +1,50 @@
+USE [AdventureSales]
+GO
+
+/****** Object:  View [dbo].[v_Outlet_IMD_STT_ytd]    Script Date: 5/13/2025 1:38:46 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE OR ALTER VIEW [dbo].[v_Outlet_IMD_STT_ytd]
+AS
+select custd_Name, a.custd_ID, '24-25' as year,
+ psub_id,sum(net_qty) as net_qty,sum(net_amt) as net_amt 
+ from
+ sttmt_skm_fly AS a LEFT OUTER JOIN
+                      customerdist_1910a AS c ON a.custd_id = c.kode_iap LEFT OUTER JOIN
+                       product_svr55 AS g ON a.prod_id = g.prod_id left outer join branch h on c.branch_id=h.branch_id
+WHERE     (year>=2024 and month>9) or (year=2025 and month<2) and (psub_id like 'CE-SCH%' or psub_id like 'IM-SCH%')  --and area in ('kalimantan','sulawesi')
+GROUP BY custd_Name, a.custd_ID,psub_id
+/*
+union all
+SELECT     TOP 100 PERCENT region, a.branch_id,branch_name, Depo, sp_name, custd_Name, a.custd_ID, year,channel,sub_channel,crm,
+                      SUM(a.net_qty) AS net_qty, SUM(a.net_amt) AS net_amt,  COUNT(DISTINCT a.week) 
+                      AS Repeat,  text_id as Psub_id,'N' as S1, 'N' as S2
+FROM         sttwk1a_Stc AS a LEFT OUTER JOIN
+                      branch AS b ON a.branch_id = b.branch_id LEFT OUTER JOIN
+                      customerdist_1910a AS c ON a.custd_id = c.kode_iap LEFT OUTER JOIN
+					 stockpoint AS d ON a.sp_id = d.sp_id LEFT OUTER JOIN
+                      productFlav AS g ON a.prod_id = g.prod_id
+WHERE     net_qty>0 and year=2022 and psub_id like 'STC%'
+GROUP BY region, a.branch_id,branch_name, Depo, a.sp_id,sp_name,custd_Name, a.custd_ID,year,channel,sub_channel,crm,crm,   
+                      text_id
+*/
+ 
+
+
+/*
+drop table v_Outlet_STC_Uht180_Yr_tbl
+select * into v_Outlet_STC_Uht180_Yr_tbl 
+ from v_Outlet_STC_Uht180_Yr_1
+
+*/
+
+--select *from product where psub_id like 'UHT190%'
+
+--select *from v_Outlet_STC_Uht180_Yr_tbl
+GO
+

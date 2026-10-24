@@ -1,0 +1,406 @@
+use sales
+DBCC SHRINKFILE(Sales_log, 1)
+BACKUP LOG Sales WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(Sales_log, 1)
+
+use ILO
+DBCC SHRINKFILE(ILO1_log, 1)
+BACKUP LOG ILO_1 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(ILO_1_log, 1)
+
+use sttwk_tmp
+DBCC SHRINKFILE(sttwk_tmp_log, 1)
+BACKUP LOG sttwk_tmp WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttwk_tmp_log, 1)
+
+use sttwk_2023b
+DBCC SHRINKFILE(sttwk_2023b_log, 1)
+BACKUP LOG sttwk_2023b WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttwk_2023b_log, 1)
+
+use sttwk_2024d
+DBCC SHRINKFILE(sttwk_2024d_log, 1)
+BACKUP LOG sttwk_2024d WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttwk_2024d_log, 1)
+ 
+
+use sales1
+DBCC SHRINKFILE(Sales1_log, 1)
+BACKUP LOG Sales1 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(Sales1_log, 1)
+
+use SlsExc
+DBCC SHRINKFILE(SlsExc_log, 1)
+BACKUP LOG SlsExc WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(SlsExc_log, 1)
+
+use ByChannel
+DBCC SHRINKFILE(ByChannel_log, 1)
+BACKUP LOG ByChannel WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(ByChannel_log, 1)
+
+use ByChannel3
+DBCC SHRINKFILE(ByChannel3_log, 1)
+BACKUP LOG ByChannel3 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(ByChannel3_log, 1)
+
+use ByChannel1
+DBCC SHRINKFILE(ByChannel1_log, 1)
+BACKUP LOG ByChannel1 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(ByChannel1_log, 1)
+
+use ByChannel2
+DBCC SHRINKFILE(ByChannel2_log, 1)
+BACKUP LOG ByChannel2 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(ByChannel2_log, 1)
+
+use ByChannel2a
+DBCC SHRINKFILE(ByChannel2a_log, 1)
+BACKUP LOG ByChannel2a WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(ByChannel2a_log, 1)
+
+use ByChannel2b
+DBCC SHRINKFILE(ByChannel2b_log, 1)
+BACKUP LOG ByChannel2b WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(ByChannel2b_log, 1)
+
+use ByChannel4
+DBCC SHRINKFILE(ByChannel4_log, 1)
+BACKUP LOG ByChannel4 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(ByChannel4_log, 1)
+
+use ByChannel4a
+DBCC SHRINKFILE(ByChannel4a_log, 1)
+BACKUP LOG ByChannel4a WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(ByChannel4a_log, 1)
+
+use ByChannel4b
+DBCC SHRINKFILE(ByChannel4b_log, 1)
+BACKUP LOG ByChannel4b WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(ByChannel4b_log, 1)
+
+use Discount
+DBCC SHRINKFILE(Discount_log, 1)
+BACKUP LOG Discount WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(Discount_log, 1)
+
+use sales2
+DBCC SHRINKFILE(Sales2_log, 1)
+BACKUP LOG Sales2 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(Sales2_log, 1)
+
+use sales4
+DBCC SHRINKFILE(sales4_log, 1)
+BACKUP LOG sales4 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sales4_log, 1)
+
+/*
+use sales3
+DBCC SHRINKFILE(sales3_log, 1)
+BACKUP LOG sales3 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sales3_log, 1)
+*/
+
+use sales5
+DBCC SHRINKFILE(sales5_log, 1)
+BACKUP LOG sales5 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sales5_log, 1)
+
+/*
+use sales4
+DBCC SHRINKFILE(Sales4_log, 1)
+BACKUP LOG Sales4 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(Sales4_log, 1)
+*/
+ 
+use sttwk_tmp 
+DBCC SHRINKFILE(sttwk_tmp_log, 1)
+BACKUP LOG sttwk_tmp WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttwk_tmp_log, 1)
+
+use Market
+DBCC SHRINKFILE(Market_log, 1)
+BACKUP LOG Market WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(Market_log, 1)
+
+
+use scm
+DBCC SHRINKFILE(scm_log, 1)
+BACKUP LOG scm WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(scm_log, 1)
+
+
+use scm3
+DBCC SHRINKFILE(scm3_log, 1)
+BACKUP LOG scm3 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(scm3_log, 1)
+
+use sttwk_2021d
+DBCC SHRINKFILE(sttwk_2021d_log, 1)
+BACKUP LOG sttwk_2021d WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttwk_2021d_log, 1)
+
+use sttwk_2022a
+DBCC SHRINKFILE(sttwk_2022a_log, 1)
+BACKUP LOG sttwk_2022a WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttwk_2022a_log, 1)
+
+use sttmt_2020a
+DBCC SHRINKFILE(sttmt_2020a_log, 1)
+BACKUP LOG sttmt_2020a WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttmt_2020a_log, 1)
+
+use sttmt_2020b
+DBCC SHRINKFILE(sttmt_2020b_log, 1)
+BACKUP LOG sttmt_2020b WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttmt_2020b_log, 1)
+
+use sttmt_2017a
+DBCC SHRINKFILE(sttmt_2017a_log, 1)
+BACKUP LOG sttmt_2017a WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttmt_2017a_log, 1)
+
+use sttmt_2017b
+DBCC SHRINKFILE(sttmt_2017b_log, 1)
+BACKUP LOG sttmt_2017b WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttmt_2017b_log, 1)
+
+use sttwk_tmp
+DBCC SHRINKFILE(sttwk_tmp_log, 1)
+BACKUP LOG sttwk_tmp WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttwk_tmp_log, 1)
+
+
+use mthskm
+DBCC SHRINKFILE(mthskm1_log, 1)
+BACKUP LOG mthskm WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(mthskm1_log, 1)
+
+
+use mti
+DBCC SHRINKFILE(mti_log, 1)
+BACKUP LOG mti WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(mti_log, 1)
+
+use crm
+DBCC SHRINKFILE(crm_log, 1)
+BACKUP LOG crm WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(crm_log, 1)
+
+use crm2
+DBCC SHRINKFILE(crm2_log, 1)
+BACKUP LOG crm2 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(crm2_log, 1)
+
+/*
+use crm2_2022
+DBCC SHRINKFILE(crm2_2022_log, 1)
+BACKUP LOG crm2_2022 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(crm2_2022_log, 1)
+
+
+use yoy
+DBCC SHRINKFILE(yoy_log, 1)
+BACKUP LOG yoy WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(yoy_log, 1)
+
+use yoy1
+DBCC SHRINKFILE(yoy1_log, 1)
+BACKUP LOG yoy1 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(yoy1_log, 1)
+
+*/
+
+/*
+use crm_2023
+DBCC SHRINKFILE(crm_log, 1)
+BACKUP LOG crm_2023 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(crm_log, 1)
+
+use crm_2022
+DBCC SHRINKFILE(crm_log, 1)
+BACKUP LOG crm_2022 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(crm_log, 1)
+
+use crm2_2022
+DBCC SHRINKFILE(crm2_2022_log, 1)
+BACKUP LOG crm2_2022 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(crm2_2022_log, 1)
+
+use ilo1
+DBCC SHRINKFILE(ilo1_1, 1)
+BACKUP LOG ilo1 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(ilo1_1, 1)
+*/
+use dms_ddi
+DBCC SHRINKFILE(dms_ddi_log, 1)
+BACKUP LOG dms_ddi WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(dms_ddi_log, 1)
+
+use ilo
+DBCC SHRINKFILE(ilo1_log, 1)
+BACKUP LOG ilo WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(ilo1_log, 1)
+
+use ilo2
+DBCC SHRINKFILE(ilo2_log, 1)
+BACKUP LOG ilo2 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(ilo2_log, 1)
+
+
+use analisaqty
+DBCC SHRINKFILE(analisaqty_log, 1)
+BACKUP LOG analisaqty WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(analisaqty_log, 1)
+
+use Milkuat
+DBCC SHRINKFILE(Milkuat_log, 1)
+BACKUP LOG Milkuat WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(Milkuat_log, 1)
+
+use kids2
+DBCC SHRINKFILE(kids2_log, 1)
+BACKUP LOG kids2 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(kids2_log, 1)
+ 
+
+use kids1
+DBCC SHRINKFILE(kids1_log, 1)
+BACKUP LOG kids1 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(kids1_log, 1)
+
+use sci2
+DBCC SHRINKFILE(sci2_log, 1)
+BACKUP LOG sci2 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sci2_log, 1)
+
+ 
+use sci1
+DBCC SHRINKFILE(sci1_log, 1)
+BACKUP LOG sci1 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sci1_log, 1)
+
+use chiller
+DBCC SHRINKFILE(chiller_log, 1)
+BACKUP LOG chiller WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(chiller_log, 1)
+
+use Uhtoth
+DBCC SHRINKFILE(Uhtoth_log, 1)
+BACKUP LOG Uhtoth WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(Uhtoth_log, 1)
+
+use program
+DBCC SHRINKFILE(program_log, 1)
+BACKUP LOG program WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(program_log, 1)
+
+use sbob
+DBCC SHRINKFILE(sbob_log, 1)
+BACKUP LOG sbob WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sbob_log, 1)
+ 
+use yearly
+DBCC SHRINKFILE(yearly_log, 1)
+BACKUP LOG yearly WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(yearly_log, 1)
+ 
+use sttyr
+DBCC SHRINKFILE(sttyr_log, 1)
+BACKUP LOG sttyr WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttyr_log, 1)
+
+use sttyr1
+DBCC SHRINKFILE(sttyr1_log, 1)
+BACKUP LOG sttyr1 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttyr1_log, 1)
+
+use sttwk_2022b
+DBCC SHRINKFILE(sttwk_2022b_log, 1)
+BACKUP LOG sttwk_2022b WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttwk_2022b_log, 1)
+
+use sttwk_2022c 
+DBCC SHRINKFILE(sttwk_2022c_log, 1)
+BACKUP LOG sttwk_2022c WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttwk_2022c_log, 1)
+
+use sttwk_2022d
+DBCC SHRINKFILE(sttwk_2022d_log, 1)
+BACKUP LOG sttwk_2022d WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttwk_2022d_log, 1)
+ 
+use sttwk_2023a
+DBCC SHRINKFILE(sttwk_2023a_log, 1)
+BACKUP LOG sttwk_2023a WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttwk_2023a_log, 1)
+
+
+use sttwk_2023b
+DBCC SHRINKFILE(sttwk_2023b_log, 1)
+BACKUP LOG sttwk_2023b WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttwk_2023b_log, 1)
+
+
+use sttwk_2023c
+DBCC SHRINKFILE(sttwk_2023c_log, 1)
+BACKUP LOG sttwk_2023c WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttwk_2023c_log, 1)
+
+use sttwk_2023d
+DBCC SHRINKFILE(sttwk_2023d_log, 1)
+BACKUP LOG sttwk_2023d WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttwk_2023d_log, 1)
+
+use sttwk_2024d
+DBCC SHRINKFILE(sttwk_2024d_log, 1)
+BACKUP LOG sttwk_2024d WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttwk_2024d_log, 1)
+
+use sttmt_2022b
+DBCC SHRINKFILE(sttmt_2022b_log, 1)
+BACKUP LOG sttmt_2022b WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttmt_2022b_log, 1)
+ /*
+use sttmt_2023a
+DBCC SHRINKFILE(sttmt_2023a_log, 1)
+BACKUP LOG sttmt_2023a WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttmt_2023a_log, 1)
+
+
+use sttmt_2023
+DBCC SHRINKFILE(sttmtqty_2023a_log, 1)
+BACKUP LOG sttmt_2023 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttmtqty_2023a_log, 1)
+
+
+use sttmt_2024
+DBCC SHRINKFILE(sttmtqty_2024_log, 1)
+BACKUP LOG sttmtqty_2024 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(sttmtqty_2024_log, 1)
+
+use Backup_2022a
+DBCC SHRINKFILE(Backup_2022a_log, 1)
+BACKUP LOG Backup_2022a WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(Backup_2022a_log, 1)
+
+use Backup_2022b
+DBCC SHRINKFILE(Backup_2022b_log, 1)
+BACKUP LOG Backup_2022b WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(Backup_2022b_log, 1)
+
+
+use YOY2
+DBCC SHRINKFILE(YOY2_log, 1)
+BACKUP LOG YOY2 WITH TRUNCATE_ONLY
+DBCC SHRINKFILE(YOY2_log, 1)
+
+*/
+--select text_id,psub_id,udf1 from product order by text_id
+
+--truncate table sales4.dbo.Wk_Report_bySubChannel_All_Dtl_Cust
+
+--select  year,month,sum(net_qty) from sttmt_2023a.dbo.sttmt group by year,month
+-- select year,sum(net_qty) from yearly.dbo.sttyr group by year
+
+ 
