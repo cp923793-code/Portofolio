@@ -1,0 +1,6 @@
+CREATE OR REPLACE TABLE customerdist_1910a AS 
+SELECT * FROM read_parquet('C:/duckDB/temp_sttwk_export/**/*.parquet');
+
+ALTER TABLE customerdist_1910a ADD PRIMARY KEY (kode_iap);
+
+SELECT * FROM customerdist_1910a where branch_id like '5200%' LIMIT 5;
