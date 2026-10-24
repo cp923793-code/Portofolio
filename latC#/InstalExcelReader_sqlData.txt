@@ -1,0 +1,15 @@
+Install-Package ExcelDataReader
+Install-Package ExcelDataReader.DataSet
+
+Install-Package Microsoft.Data.SqlClient
+
+string connectionString = "Data Source=HYPE\\SQL_2022;Initial Catalog=OLTP;User ID=sa;Password=D@1ry$2014";
+
+pyspark --jars c:\spark_drivers\mssql-jdbc-13.2.1.jre11.jar,C:\spark_drivers\mysql-connector-j-9.5.0.jar
+
+%HADOOP_HOME%\bin
+
+mssql-jdbc-13.2.1.jre11.jar
+mssql-jdbc-13.12.1.jre11.jar
+mysql-connector-j-9.5.0.jar
+mysql-connector-j-9.5.0.jar

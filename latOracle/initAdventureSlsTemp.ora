@@ -1,0 +1,83 @@
+##############################################################################
+# Copyright (c) 1991, 2013 by Oracle Corporation
+##############################################################################
+ 
+###########################################
+# Cache and I/O
+###########################################
+db_block_size=8192
+ 
+###########################################
+# Cursors and Library Cache
+###########################################
+open_cursors=300
+ 
+###########################################
+# Database Identification
+###########################################
+db_name="Adventur"
+ 
+###########################################
+# File Configuration
+###########################################
+control_files=("C:\Oracle\oradata\ADVENTURESALES\control01.ctl", "C:\Oracle\fast_recovery_area\ADVENTURESALES\control02.ctl")
+db_recovery_file_dest="C:\Oracle\fast_recovery_area"
+db_recovery_file_dest_size=13836m
+ 
+###########################################
+# Miscellaneous
+###########################################
+compatible=21.0.0
+db_unique_name="AdventureSales"
+diagnostic_dest=C:\Oracle
+enable_pluggable_database=true
+ 
+###########################################
+# NLS
+###########################################
+nls_language="AMERICAN"
+nls_territory="AMERICA"
+ 
+###########################################
+# Network Registration
+###########################################
+#local_listener=LISTENER_ADVENTURESLS
+ 
+###########################################
+# Processes and Sessions
+###########################################
+processes=1280
+ 
+###########################################
+# SGA Memory
+###########################################
+sga_target=4731m
+ 
+###########################################
+# Security and Auditing
+###########################################
+audit_file_dest="C:\Oracle\admin\AdventureSales\adump"
+audit_trail=db
+remote_login_passwordfile=EXCLUSIVE
+ 
+###########################################
+# Shared Server
+###########################################
+dispatchers="(PROTOCOL=TCP) (SERVICE=AdventureSlsXDB)"
+ 
+###########################################
+# Sort, Hash Joins, Bitmap Indexes
+###########################################
+pga_aggregate_target=1577m
+ 
+###########################################
+# System Managed Undo and Rollback Segments
+###########################################
+undo_tablespace=UNDOTBS1
+ 
+JOB_QUEUE_PROCESSES=0
+AQ_TM_PROCESSES=0
+_no_recovery_through_resetlogs=true
+_enable_automatic_maintenance=0
+_diag_hm_rc_enabled=false
+ 
